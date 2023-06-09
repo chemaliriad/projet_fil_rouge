@@ -1,14 +1,11 @@
-from urllib.request import urlopen
-from urllib.error import HTTPError
-from bs4 import BeautifulSoup
+from selenium icd ort webdriver
+from selenium import webdriver 
+import chromedriver_autoinstaller 
+import undetected_chromedriver as uc 
 
-html = urlopen("http://www.pythonscraping.com/pages/page3.html")
-bsObj = BeautifulSoup(html)
-        s
-for sibling in bsObj.find("table",{"id":"giftList"}).tr.next_siblings:
-            print(sibling)
+# driver = webdriver.Firefox()
 
-        
-        
-        
+# driver.get("https://www.leboncoin.fr/recherche?category=13&text=local&locations=Lille__50.6334776434461_3.0611980440479085_9881_5000")
 
+driver = uc.Chrome()
+driver.get('https://distilnetworks.com')

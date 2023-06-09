@@ -1,0 +1,62 @@
+idAnnonce":203607367,
+
+"detailUrl":"/annonces/location/boutique/lille-59000/203607367-1",
+
+"codeTypeBien":600,
+
+"idTypeTransaction":1,
+
+"idTypeBien":6,
+
+"idSousTypeBien":0,
+
+"isAnnonceOr":true,
+
+"isBoostSuggestion":true,
+
+"isBoostHighlight":true,
+
+"isBusinessSold":false,
+
+"isDivisible":false,
+
+"isFlexOffice":false,
+
+"isImmediatelyAvailable":true,
+
+"businessSold":{"businessType":0,"subBusinessType":0},
+
+"coworking":null,
+
+"cardTitle":"Boutique",
+
+"cardDescription":"WALLPARTNERS vous propose une boutique � proximit� imm�diate de la place Rihour avec	"
+					"possibilit� d'extration, d'une surface totale d'environ 297m2 comprenant un rez de chauss�e d'environ 147m2, un 1er...",
+
+"description":null,
+"equipments":[],
+"localisation":{"codeRegion":2243,"codeDepartement":"59",
+				"idSubDivision":0,"fakeCityCodeInsee":0,"isArrondissement":false,
+				"codeInsee":590350,"codePostal":"59000","nomVille":"Lille","idQuartier":115621,
+				"nomQuartier":"Centre","idIris":null,"adresse":"","localisationPrecision":2,
+				"geoLocation":{"latitude":50.63502,"longitude":3.06378}}
+
+,"mandat":{"isCoex":false,"isExclusive":false,"hasEmail":true,"hasTel":true,"mandataires":[{"name":"WALL PARTNERS","idAgence":446887,"idRcu":"RC-094899","idTiers":272283,"isPrincipal":true,"logoUrl":"https://v.seloger.com/s/width/150/logos/0/j/v/v/0jvvmzn8efyx230efayw5btm9c8ys7yi3ttc7mahs.jpg",
+"websiteUrl":"http://www.wallpartners.fr","codePostal":"75116"}]},
+
+"photos":["https://v.seloger.com/s/crop/500x240/visuels/0/o/e/6/0oe6bxmcux1kt87uizuw9bfi2xj4iifo82vz63chs.jpg","https://v.seloger.com/s/crop/500x240/visuels/0/3/m/z/03mz09p1fe3u3cv9vpd83ib4v8c99s8foj6d2fvnk.jpg","https://v.seloger.com/s/crop/500x240/visuels/0/u/y/8/0uy84vkdw2du3jm3gigmrjyg4x8p7gcvedwxwaj6o.jpg","https://v.seloger.com/s/crop/500x240/visuels/1/8/c/7/18c78axhic9ypga3i558ry3kvemjfkffj9o3cm6tc.jpg","https://v.seloger.com/s/crop/500x240/visuels/2/6/c/p/26cp8pydmh7urd6seqcg0torf10bmzvr9xa5qj30g.jpg"],
+
+"prices":{"buy":null,"rent":{"monthlyPrice":14583.33, "yearlyPrice":174999.96,"yearlyPriceBySquareMeter":589.22545454545457},
+			"additionalCharges":{"hasAgencyFeesIncluded":false,"hasAccessPrice":false,"hasLeaseBack":false,"hasOperatingCost":false,
+			"hasTaxIncluded":false,"accessPrice":null,"leaseBack":null}},
+
+
+
+"publicationDateOnly":"2023-06-06T00:00:00",
+"publicationDateTime":"2023-06-06T14:56:00",
+"qualityIndex":95,
+"refAnnonce":null,
+"space":297.0,
+			
+"spaceMinimunDivisible":null}
+

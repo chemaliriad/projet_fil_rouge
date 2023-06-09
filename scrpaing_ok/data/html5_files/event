@@ -1,0 +1,27 @@
+﻿/*<!--*/
+(function() {
+var callWCADestination = function(aurl) {
+    var url = 'https://' + aurl;
+    var p = document.createElement('iframe');
+    p.width = p.height = '0';
+    p.style.display = 'none';
+    var iframeSource = "javascript:(function(){var d=document;";
+    iframeSource += 'd.createElement("img").src="' + encodeURI(url) + '";';
+    iframeSource += "setTimeout(function(){d.open();d.write('');d.close();},1000);})();";
+    p.src = iframeSource;
+    if (criteo_q) {
+        criteo_q.push({ event: 'appendTag', element: p, requiresDOM: 'non-blocking' });
+    }
+}
+var cto_fw_url = 'www.facebook.com/tr/?id=121565874916088&ev=Search&cd[content_type]=product&cd[content_ids]=%5B%225186319666068032262%22%2C%22-271540877835344629%22%2C%22-4914721694900493822%22%5D&cd[product_catalog_id]=481645571960287&cd[product_category]=1835149662&cd[application_id]=423936147658676&ud[external_id]=b5c1afb31746cae40e2bbdf79fd0cf9dde287802f33cede3269662eaf8e0b0ad';
+callWCADestination(cto_fw_url);
+})();
+
+
+(function() {
+var CRITEO_COM_TOKEN="A8+GUOvok5j8ovF5eDgcRkHjjwMRBeKryCemTXvbp0vtb//sDFgNbQ+1h5AEm6m7NkU/FuBEEqP3YH/3StuCyQ4AAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4ODA4MzE5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",addTrialToken=function(e){var t=document.createElement("meta");t.httpEquiv="origin-trial",t.content=e,document.head.appendChild(t)},tokenAdded=function(){for(var e=0,t=document.getElementsByTagName("meta");e<t.length;e++){var n=t[e];if("origin-trial"===n.httpEquiv&&n.content===CRITEO_COM_TOKEN)return!0}return!1},isChrome=function(){return!!window.chrome};isChrome()&&!tokenAdded()&&addTrialToken(CRITEO_COM_TOKEN);var onLoad=function(e){"complete"===document.readyState?setTimeout(e):window.addEventListener?window.addEventListener("load",e,!1):window.attachEvent("onload",e)},dropIframe=function(e,t){if(!true||"joinAdInterestGroup"in navigator){var n=document.createElement("iframe");n.width=n.height="0",n.style.display="none",n.title=t,n.src=e,document.body.appendChild(n)}},callFledge=function(e,t,n,o,d){var i=e+"/tagging/advertiser"+"?partnerId="+t+"&uid="+o;n&&(i+="&fpId="+n),d&&(i+="&requestId="+d),onLoad(function(){isChrome()&&dropIframe(i,"Criteo Fledge iframe")})};
+callFledge('https://fledge.eu.criteo.com', 17752, '', '1f5d59f0-035f-4b1a-afdf-f1f2d906f031', 'd2fe7e60-26b7-4a12-83f7-02571a1545cb');
+callFledge('https://fledge.eu.criteo.com', 94520, '', '1f5d59f0-035f-4b1a-afdf-f1f2d906f031', 'd2fe7e60-26b7-4a12-83f7-02571a1545cb');
+})();
+
+/*-->*/

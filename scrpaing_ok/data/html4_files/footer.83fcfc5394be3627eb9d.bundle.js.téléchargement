@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{zVI7:function(e,s,o){"use strict";o.r(s),s.default={toggleLinksSeoFooter:function(){let e=document.getElementsByClassName("js-footer-seo-collapsable");if(e)for(let s=0;s<e.length;s++)e[s].addEventListener("click",(function(){if(this.classList.contains("open"))this.classList.remove("open");else{let e=document.querySelector(".js-footer-seo-collapsable.open");e&&e.classList.remove("open"),this.classList.toggle("open")}}))}}}}]);
+//# sourceMappingURL=footer.83fcfc5394be3627eb9d.bundle.js.map
