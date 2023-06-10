@@ -1,0 +1,341 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{"37uW":function(e,t,n){"use strict";n.d(t,"a",(function(){return i}));var r=n("q1tI");function i(e,t){Object(r.useEffect)((()=>{var n;if(e.length<1)throw Error("There should be at least one ref");const r=null===(n=e[0].current)||void 0===n?void 0:n.ownerDocument;if(!r)return;const i=n=>{t&&e.every((({current:e})=>e&&e!==n.target&&!e.contains(n.target)))&&t(n)};return r.addEventListener("mouseup",i),r.addEventListener("touchend",i),()=>{r.removeEventListener("mouseup",i),r.removeEventListener("touchend",i)}}),[e,t])}},CBWz:function(e,t,n){"use strict";t.a={titleSort:"Tri : ",optionSelection:"Sélection ",optionNew:"Nouveautés ",optionLowestPrice:"Prix le plus bas ",optionHighestPrice:"Prix le plus élevé ",optionLowestSpace:"Surface la plus basse ",optionHighestSpace:"Surface la plus élevée ",tooltipLabel:"Pour comprendre l'ordre d'affichage, consulter les ",tooltipLinkToModal:"règles de tri",informations:{intro:"La présente rubrique a pour objet de définir les conditions de référencement et de classement des annonces sur le site bureaux-commerces.seloger.com (« le Site SeLoger Bureaux et Commerces»), conformément au Décret n° 2017-1434 du 29 septembre 2017 définissant les obligations d'information applicables aux opérateurs de plateforme proposant, à titre professionnel, un service de communication au public en ligne reposant sur le classement ou le référencement, au moyen d'algorithmes informatiques, de contenus, de biens ou de services proposés ou mis en ligne par des tiers ».",tit1div1:"I. Référencement des annonceurs : ",p1tit1div1:"La diffusion d’annonces sur le Site SeLoger Bureaux et Commerces est réservée aux professionnels de l’immobilier (i) détenant une carte de transaction ou de gestion conformément à la loi Hoguet n° 70-9 du 2 janvier 1970 et (ii) ayant souscrit un contrat avec SeLoger Bureaux et Commerces (le « Contrat SeLoger Bureaux et Commerces »).",p2tit1div1:"La souscription d’un Contrat SeLoger Bureaux et Commerces concerne exclusivement les biens immobiliers d’entreprise proposés à la vente et / ou à la location.",p3tit1div1:"En cas de non-respect par l’annonceur de ses engagements contractuels et / ou de la réglementation en vigueur et en particulier celle applicable aux professionnels de l’immobilier et/ou des règles de diffusion des annonces, SeLoger Bureaux et Commerces se réserve le droit, sans notification préalable, de refuser ou de bloquer la publication d’annonces et / ou de résilier le Contrat SeLoger Bureaux et Commerces de l’annonceur.",tit2div2:"II. Classement des annonces :",p1tit2div2:"Le tri par défaut des annonces (intitulé « Tri Recommandé» sur la page de résultats du Site SeLoger Bureaux & Commerces) est l’ordre d’affichage des annonces qui s’applique automatiquement à partir du moment où l’internaute n’a pas personnalisé son tri ou spécifié de critères de préférence.",p2tit2div2:"Les annonces sont ainsi affichées par défaut dans l'ordre de priorité suivant :",p3tit2div2:"Si l’annonceur a souscrit une option payante sur une ou plusieurs de ses annonces, celles-ci bénéficieront, dans le tri initial par défaut du Site, d'une priorité d'affichage en liste de résultats.",p4tit2div2:"Les annonces sont ensuite classées par récence. Ainsi, plus l’annonce est récente, plus elle sera priorisée dans la liste de résultats.",p5tit2div2:"A date de publication identique, les annonces sont priorisées par taux de complétude. Plusieurs critères sont pris en compte pour déterminer la complétude d'une annonce, et notamment les coordonnées de géolocalisation du bien, les visuels accompagnant le bien, les informations sur le bien, etc...",p6tit2div2:"Les annonces de coworking sont triées par récence. Ainsi, plus l’annonce est récente, plus elle sera priorisée dans la liste de résultats."}}},PT1Q:function(e,t,n){"use strict";n.r(t);var r=n("K4RN"),i=n("q1tI"),a=n.n(i),o=n("vOnD"),l=n("fRu4"),s=n("CBWz");const d=o.default.div`
+  width: 100%;
+  &:not(:last-of-type){
+    margin-bottom: 2.4rem;
+  }
+  @media screen and (max-width: 991px) {
+    cursor: pointer;
+    &:first-of-type {
+      margin-top: 2.4rem;
+    }
+  }
+`,c=o.default.div`
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-bottom: 1px solid #7d7d7d;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  @media screen and (max-width: 991px) {
+    position: relative;
+  }
+`,m=o.default.div`
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background: url(/Content/App/dist/img/arrow-thin-grey-right.svg) right
+      center no-repeat;
+    right: 0;
+    bottom: 0.8rem;
+    transform: rotate(90deg);
+    filter: brightness(3);
+    transition: transform linear 0.3s;
+    transform: ${e=>e.open?"rotate(-90deg)":"rotate(90deg)"};
+  }
+`,u=o.default.nav`
+  display: block;
+  @media screen and (max-width: 991px) {
+    display: ${e=>e.open?"block":"none"};
+  }
+`,p=o.default.ul`
+  @media screen and (min-width: 992px) {
+    column-count: 3;
+  }
+  @media screen and (max-width: 991px) {
+    column-count: 1;
+  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`,f=o.default.li`
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+`,h=o.default.a`
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover {
+    color: white;
+  }  
+  &:focus {
+    color: white;
+  }
+`;var g=({model:e})=>{const[t,n]=Object(i.useState)(!1),[r,o]=Object(i.useState)(!1);Object(i.useEffect)((()=>{document.body.style.overflow=r?"hidden":"unset"}),[r]);const g=e.links||[];return a.a.createElement(d,null,a.a.createElement(c,{onClick:()=>{n(!t)}},e.subtitle,a.a.createElement(m,{open:t,onClick:()=>{n(!t)}})),a.a.createElement(u,{open:t},a.a.createElement(p,null,g.map((function(e){return"2"===e.id&&e.value.indexOf("Nous contacter")>=0?a.a.createElement(f,{key:e.id,onClick:()=>{document.dispatchEvent(new CustomEvent("open-service-client-modal"))},style:{visibility:document.body.classList.contains("homepage")||document.body.classList.contains("quiSommesNous")?"visible":"hidden"}},e.value):"3"===e.id&&e.value.indexOf("Paramétrer mes cookies")>=0?a.a.createElement(f,{key:e.id,onClick:()=>{Didomi.preferences.show()}},e.value):"4"===e.id&&e.value.indexOf("Fonctionnement du site")>=0?a.a.createElement(f,{key:e.id,onClick:()=>{o(!0)}},e.value):a.a.createElement(f,{key:e.id},a.a.createElement(h,{href:e.href},e.value," "))}))),r&&a.a.createElement(l.a,{isVisible:r,showModal:o,informations:s.a.informations})))};const v=o.default.div`
+  @media screen and (min-width: 992px) {
+    padding-top: 3.2rem;
+  }
+  @media screen and (max-width: 991px) {
+    padding-top: 2.4rem;
+  }
+`,b=o.default.nav`
+  display: block;
+`,x=o.default.ul`
+  margin: 0 auto;
+  @media screen and (min-width: 992px) {
+    padding: 0 1.6rem;
+    text-align: center;
+    max-width: 1120px;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 0;
+  }
+`,w=o.default.li`
+  display: inline;
+  &:not(:last-of-type)::after {
+    content: ' - ';
+    color: white;
+  }
+`,E=o.default.a`
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover {
+    color: white;
+  }
+`;var k=function({model:e}){const t=e.links||[];return Object(i.useEffect)((()=>{var e=document.getElementById("footer-essential-links"),t=document.getElementById("sites-groupe-sl"),n=document.getElementById("seo-links");t&&(e.removeChild(t),e.removeChild(n))}),[]),a.a.createElement(v,null,a.a.createElement("div",null,a.a.createElement(b,null,a.a.createElement(x,null,t.map((function(e){return a.a.createElement(w,{key:e.id},a.a.createElement(E,{href:e.href},e.value))}))))))};const y=o.default.div`
+  z-index: 0;
+  @media screen and (min-width: 992px) {
+    width: 25%;
+  }
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    padding-top: 3.2rem;
+  }
+`,L=o.default.form`
+  display: block;
+  margin-top: 0em;
+`,S=o.default.label`
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+`,C=o.default.div`
+  width: 100%;
+  display: table;
+  border-collapse: separate;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+`,O=o.default.input`
+  height: 4rem;
+  padding: 0.2rem 1.2rem;
+  border: 0;
+  border-radius: 3px 4px 4px 3px;
+  outline: 0;
+  box-shadow: none;
+  resize: none;
+  display: block;
+  width: 100%;
+  line-height: 1.375;
+  color: #6e6c6c;
+  background-color: #fff;
+  background-image: none;
+  font: inherit;
+  margin: 0;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+`,z=o.default.button`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem 1.2rem;
+  background-color: #0F495F;
+  border: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none !important;
+  transition: background-color 0.2s, color 0.2s;
+`,B=o.default.img`
+  margin-left: -0.1rem;
+  margin-top: -0.6rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+`;var j=()=>{const[e,t]=i.useState(""),[n,r]=i.useState();return i.createElement(y,null,i.createElement(L,{action:"/rechercheReference",method:"get",onSubmit:n=>{n.preventDefault(),(null==e?void 0:e.trim())?fetch(`/api/referenceapi?refAnnonce=${encodeURIComponent(e)}`).then((n=>{if(!n.ok)return t(""),void r("Une erreur est survenue veuillez réessayer");n.json().then((n=>{if(n<1||null==n)return t(""),void r("Référence non valide");location.href=`/rechercheReference?refAnnonce=${encodeURIComponent(e)}`}))})):r("Saisissez une référence")}},i.createElement(S,null,"Rechercher une annonce par sa référence ?"),i.createElement(C,null,i.createElement(O,{type:"text",className:n?"has-error":"",placeholder:null!=n?n:"N° de référence",name:"refAnnonce",value:e,onChange:e=>{r(void 0),t(e.target.value)},id:"refAnnonce"}),i.createElement(z,{id:"search-reference",type:"submit"},i.createElement(B,{src:"/Content/App/dist/img/user-interface/loupe.svg",alt:"rechercher","aria-label":"lancer la recherche"})))))},P=n("B/Ta"),q=n("IoOJ"),I=n("gBzq"),_=n("7maZ");const R=o.default.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.6rem;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+`,A=Object(o.default)(P.a)`
+  @media screen and (min-width: 426px) {
+    margin-left: 1.6rem;
+  }
+  margin: 0.7rem 0.8rem 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+`,N=o.default.span`
+  @media screen and (max-width: 425px) and (max-width: 991px) {
+    display: block;
+  }
+`,D=o.default.div`
+  font-weight: 700;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+  @media screen and (max-width: 425px) and (max-width: 991px) {
+    text-align: center;
+  }
+`,M=o.default.a`
+  & , &:hover, &:focus {
+    color: inherit;
+  }
+`;var T=()=>i.createElement(R,null,i.createElement(D,null,i.createElement("span",null,"Suivre SeLoger bureaux & commerces"),i.createElement(N,null,i.createElement(M,{href:"https://www.linkedin.com/company/seloger-bureaux-commerces/",target:"_blank"},i.createElement(A,{icon:q.a,size:"40px"})),i.createElement(M,{href:"https://www.facebook.com/SeLogerBUCOM/",target:"_blank"},i.createElement(A,{icon:I.a,size:"40px"})),i.createElement(M,{href:"https://twitter.com/SeLogerBUCOM/",target:"_blank"},i.createElement(A,{icon:_.a,size:"40px"})))));const U={links:[{id:"1",value:"Politique Générale de Protection des Données",href:"https://www.seloger.com/CGU_politique_de_confidentialite.html"},{id:"2",value:"Conditions Générales d'Utilisation",href:"/conditions-generales"},{id:"3",value:"Paramétrer mes cookies",href:""},{id:"4",value:"Fonctionnement du site",href:""}],subtitle:"Infos pratiques"},F={links:[{id:"1",value:"Diffusez vos annonces",href:"/qui-sommes-nous"},{id:"2",value:"Nous contacter",href:""}],subtitle:"Services Pro"},V={links:[{id:"1",value:"SeLoger.com - Petites annonces immobilières",href:"https://www.seloger.com/"},{id:"2",value:"BellesDemeures.com - Immobilier de prestige",href:"https://www.bellesdemeures.com/"},{id:"3",value:"SeLoger.com - Prix de l'immobilier au m²",href:"https://www.seloger.com/prix-de-l-immo/vente/pays/france.htm#?CMP=INT_AGB_Footer"},{id:"4",value:"SeLogerNeuf.com - Immobilier neuf",href:"https://www.selogerneuf.com/"},{id:"5",value:"SeLogerVacances.com - Location saisonnière",href:"https://vacances.seloger.com/"},{id:"6",value:"Amivac.com - Location de vacances",href:"https://www.amivac.com/"}],subtitle:"SeLoger bureaux & commerces, c'est aussi..."},$={links:[{id:"1",value:"Location Bureau",href:"/location/bureau"},{id:"2",value:"Location Local commercial / Boutique",href:"/location/boutique"},{id:"3",value:"Location Local d'activités / Entrepôt",href:"/location/local-d-activites-entrepot"},{id:"4",value:"Vente Fonds de Commerce",href:"/achat/fonds-de-commerce"},{id:"5",value:"Location local professionnel",href:"/location/local-professionnel"},{id:"6",value:"Vente local professionnel",href:"/achat/local-professionnel"}]},G=o.default.div`
+  background-color: #4c4c4c;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  &::before {
+    display: table;
+    content: ' ';
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+`,H=o.default.div`
+  width: 100%;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+`,J=o.default.div`
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    padding: 5.6rem 0 3.2rem;
+  }
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`,W=o.default.div`
+  @media screen and (min-width: 992px) {
+    width: calc(75% - 2.4rem);
+  }
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+`;t.default=()=>a.a.createElement(o.ThemeProvider,{theme:r.c},a.a.createElement(G,null,a.a.createElement(H,null,a.a.createElement(J,null,a.a.createElement(j,null),a.a.createElement(W,null,a.a.createElement(g,{model:U}),a.a.createElement(g,{model:F}),a.a.createElement(g,{model:V}))),a.a.createElement(T,null),a.a.createElement(k,{model:$}))))},drUO:function(e,t,n){"use strict";var r=n("q1tI"),i=n.n(r);function a(){return(a=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}t.a=function(e){return i.a.createElement("svg",a({width:"1em",height:"1em",viewBox:"0 0 20 20",xmlns:"http://www.w3.org/2000/svg",xmlnsXlink:"http://www.w3.org/1999/xlink"},e),i.a.createElement("defs",null,i.a.createElement("path",{d:"M18.245 1c.2 0 .391.08.531.224a.74.74 0 010 1.06l-7.714 7.707 7.714 7.708a.74.74 0 010 1.06.732.732 0 01-.53.241c-.2 0-.392-.078-.532-.22l-7.72-7.723-7.708 7.703a.742.742 0 01-.531.24.732.732 0 01-.531-.22.74.74 0 010-1.061L8.938 10 1.224 2.285a.74.74 0 010-1.061.742.742 0 011.062 0l7.718 7.711 7.71-7.711A.742.742 0 0118.245 1z",id:"close-regular_svg__a"})),i.a.createElement("use",{fill:"currentColor",xlinkHref:"#close-regular_svg__a",fillRule:"evenodd"}))}},fRu4:function(e,t,n){"use strict";n.d(t,"a",(function(){return w}));var r=n("q1tI"),i=n.n(r),a=n("B/Ta"),o=n("drUO"),l=n("OnO+"),s=n("vOnD"),d=n("Pi56");const c=s.keyframes`
+ from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+`,m=s.default.div`
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  pointer-events: auto;
+  animation-name: ${c};
+  animation-duration: 0.1s;
+  @media screen and (min-width: 768px) {
+    padding-top: 37rem;
+    padding-bottom: 3rem;
+  }
+`,u=s.default.div`
+  background-color: #0f495f;
+  width: 100%;
+  padding: 1.7rem;
+  position: relative;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom: none;
+`,p=s.default.div`
+  margin: 0;
+  color: #fff;
+  text-transform: none;
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+`,f=s.default.div`
+  padding: 2.4rem;
+`,h=s.default.div`
+  /* margin-bottom: 30px; */
+  margin-top: 23rem;
+  pointer-events: auto;
+  width: 60rem;
+  height: auto;
+  max-width: calc(100% - 32px);
+  max-height: 1177px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 24%) 0px 4px 16px 0px;
+  border-radius: 4px;
+  z-index: 999;
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    width: 100%;
+    max-height: 200rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    transform: none;
+    background-color: #f2f2f2;
+    padding-bottom: 32px;
+  }
+`,g=s.default.div`
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+`;s.default.div`
+  margin-top: 0.7rem;
+`,Object(s.default)(a.b)`
+  color: #0f495f;
+  cursor: pointer;
+`,Object(s.default)(d.b)`
+  max-width: 16rem;
+  z-index: 2;
+`,s.default.span`
+  text-decoration: underline;
+  cursor: pointer;
+`,s.default.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+`,s.default.div`
+    width: 20rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+`,s.default.div`
+  display: flex;
+`;var v=function({isVisible:e,showModal:t,children:n}){const s=Object(r.useRef)(null);return Object(l.a)([s],(()=>{t(!1)})),e&&i.a.createElement(m,null,i.a.createElement(h,{"data-test":"sort-modal",ref:s,onClick:e=>{e.stopPropagation()}},i.a.createElement(u,null,i.a.createElement(p,null,"Fonctionnement de notre site"),i.a.createElement(g,{onClick:e=>{t(!1),e.stopPropagation()}},i.a.createElement(a.b,{color:"white",icon:o.a}))),i.a.createElement(f,null,n)))};const b=s.default.div`
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+`,x=s.default.p`
+    color: #2b2b2b;
+    font-size: 1.6rem;
+`;function w({isVisible:e,showModal:t,informations:n}){return Object(r.useEffect)((()=>{document.body.style.overflow=e?"hidden":"unset"}),[e]),i.a.createElement(v,{isVisible:e,showModal:t,"data-test":"modal-refiner"},i.a.createElement(x,null,n.intro),i.a.createElement(b,null,n.tit1div1),i.a.createElement(x,null,n.p1tit1div1),i.a.createElement(x,null,n.p2tit1div1),i.a.createElement(x,null,n.p3tit1div1),i.a.createElement(b,null,n.tit2div2),i.a.createElement(x,null,n.p1tit2div2),i.a.createElement(x,null,n.p2tit2div2),i.a.createElement(x,null,n.p3tit2div2),i.a.createElement(x,null,n.p4tit2div2),i.a.createElement(x,null,n.p5tit2div2),i.a.createElement(x,null,n.p6tit2div2),i.a.createElement(x,null,n.p7tit2div2))}}}]);
+//# sourceMappingURL=footer-layout.3051b6ff999feba45031.bundle.js.map

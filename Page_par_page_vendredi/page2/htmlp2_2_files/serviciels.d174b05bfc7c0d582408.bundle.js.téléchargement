@@ -1,0 +1,67 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{FzeT:function(e,L,t){"use strict";t.d(L,"a",(function(){return n}));const n={customServices:"sur mesure",freeServices:"Services gratuits",mandatButtonLabel:"Confiez votre bien",mandatSlogan:"Simplifiez la vente ou location de votre bien.",ourServices:"Nos services",preneurButtonLabel:"Confiez votre recherche",preneurSlogan:"Gagnez du temps sur votre recherche de bien.",slogan:"Nous sommes là pour vous ! Notre réseau d’expert en immobilier professionnel est à votre service."}},jZhh:function(e,L,t){"use strict";t.r(L),t.d(L,"default",(function(){return f}));var n=t("q1tI"),r=t.n(n),i=t("vOnD"),a=t("K4RN"),o=t("+3/n"),d=t("FzeT");const c=i.default.div`
+    margin: 0.8rem auto 1.6rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+`;i.default.div`
+    margin: 0 auto;
+    text-align: center;
+`,i.default.div`
+    padding: 2.4rem;
+    background-color: #e6f0f9;
+    border-radius: 12px;
+`,i.default.p`
+    margin: 0 0 1.6rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.33;
+`;var l=t("XQDt");const m=i.default.div.attrs((e=>({className:"serviciels-container"})))`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  @media screen and (max-width: 1023px) {
+    padding: 2.4rem;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 6.4rem 2.4rem 8rem;
+  }
+`,s=i.default.span`
+font-size: 3.2rem;
+z-index: 0;
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 0.8rem;
+  }
+  position:relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background: #f3ff78;
+    clip-path: path("M2.31 24.54L1.47 22.18L1.47 20.96L0.16 20.24L0.16 18.81L0.16 16.91L0.16 15.34L1.23 15.34L3.28 13.97L4.59 13.97L6.93 12.4L14.85 10.3L17.56 9.32L19.11 9.32L22.27 8.23L24.25 8.23C25.01 8.07 25.48 7.86 25.68 7.59C25.87 7.33 26.21 7.02 26.68 6.65L28.57 6.65C28.91 6.52 29.23 6.52 29.55 6.65C29.87 6.79 30.62 6.79 31.8 6.65L33.81 5.38C34.56 5.09 35.05 5.09 35.28 5.38C35.63 5.82 36.72 5.22 37.34 5.38C37.76 5.49 39.41 5.49 42.3 5.38L42.3 4.03C43.06 3.62 43.71 3.62 44.25 4.03C45.07 4.64 46.04 3.58 46.48 4.03C46.92 4.47 48.27 3.86 48.88 4.03C49.28 4.13 50.56 4.13 52.71 4.03L54.03 2.93L58 2.93L60.23 2.93L61.94 1.95L62.75 2.93L64.53 1.95L65.41 1.95L71.4 1.25L71.4 1.95L73.48 1.95C73.6 1.19 73.84 0.96 74.2 1.25C74.56 1.55 75.21 1.78 76.14 1.95C76.55 2.68 77.24 2.68 78.21 1.95C79.18 1.22 79.97 0.99 80.57 1.25L84.14 0.47L84.14 1.25L86.71 0.47C86.49 0.11 86.83 0.11 87.73 0.47C88.63 0.83 89.82 0.83 91.3 0.47L91.3 1.25L93.32 0.47L94.33 1.25L95.06 1.95L96.79 1.25L99.32 1.25L101.36 1.25L101.36 1.95L103.09 1.95L103.73 1.95L106.07 1.95L108.63 2.93L110.58 1.95L112.3 1.25L114.14 1.95L114.79 2.93L115.55 1.95L118.18 1.95L118.18 2.93L119.79 2.93L120.79 1.95L122.21 2.93L122.21 4.03L123.94 4.03L123.94 2.93L126.07 2.93L126.9 4.03L128.38 4.03L129.73 2.93L129.73 4.03L131.41 5.38L132.36 4.03L133.52 4.03L134.14 2.93L134.81 4.03L135.78 5.38L136.89 4.71L138.81 4.71L138.81 4.03L140.24 4.71L140.93 4.71L142.1 4.71C142.48 4.5 142.76 4.5 142.94 4.71C143.12 4.93 143.5 5.15 144.06 5.38L146.44 5.38L146.44 6.65L148.79 6.65L150.04 6.65L151.11 7.59L152.03 7.59L153.75 7.59L154.69 8.23L156.31 8.23L156.93 8.23L158.35 9.32L159.05 9.32L159.84 10.3L159.05 12.37L158.35 13.97L158.35 15.34L156.93 16.91L156.31 18.81L154.69 20.96L154.69 23.22L153.75 25.28L152.84 26.47L152.84 27.57L152.03 28.51L151.11 29.63C151.25 30.44 151.25 30.98 151.11 31.28C150.96 31.57 150.6 32.28 150.04 33.4L148.79 33.4L148.79 34.28L147.52 35.11L146.44 35.11L144.06 35.11L142.94 34.28L142.1 34.28C141.5 34.47 140.87 34.47 140.24 34.28C139.6 34.1 138.48 33.8 136.89 33.4L135.78 33.4L132.36 33.4L132.36 32.56L131.41 31.28L130.52 32.56C130.8 32.94 130.54 32.94 129.73 32.56C128.92 32.18 127.7 32.18 126.07 32.56L123.94 32.56L122.21 31.28L120.79 31.28C120.61 30.98 120.28 30.98 119.79 31.28C119.06 31.72 119.65 30.85 118.18 31.28C116.72 31.71 117.16 31.57 115.55 31.28C114.47 31.08 113.39 30.83 112.3 30.54L108.63 30.54L104.93 30.54C104.8 30.55 104.4 30.55 103.73 30.54C102.72 30.52 101.15 29.7 101.36 29.63C101.5 29.59 100.58 29.59 98.6 29.63L96.79 29.63L94.33 29.63C94.06 30.43 93.72 30.73 93.32 30.54C92.92 30.34 91.96 30.04 90.44 29.63L89.43 29.63C88.59 29.47 88.02 29.47 87.73 29.63C87.43 29.79 86.73 30.1 85.61 30.54L84.14 29.63L82.74 30.54L82.74 28.51L80.57 29.63L80 30.54L75.47 29.63L72.87 29.63L70 29.63L68.76 30.54L66.06 30.54L64.53 29.63L62.75 31.28L61.94 31.28L60.23 31.28C60.49 30.56 60.49 30.31 60.23 30.54C59.98 30.76 59.24 31.01 58 31.28L56.04 31.28L55.28 32.56L54.03 32.56L51.7 32.56L49.51 32.56L47.59 32.56L46.48 33.4L44.25 33.4L42.3 33.4L41.12 34.28C40.96 33.96 40.7 33.96 40.34 34.28C39.98 34.61 39.19 34.88 37.99 35.11L36.63 34.28L33.81 35.11L31.8 35.91L30.42 35.91L28.57 36.58C28.29 36.39 27.97 36.39 27.61 36.58C27.24 36.77 26.38 36.77 25.03 36.58L23.11 37.47L23.11 38.2L20.52 38.2C19.62 38.48 19.15 38.81 19.11 39.19C19.08 39.57 18.56 39.79 17.56 39.86L16.63 39.86L15.64 39.19L12.92 39.19L10.64 39.19L8.92 39.19C8.22 38.33 7.97 37.75 8.17 37.47C8.37 37.18 8.37 36.66 8.17 35.91L6.93 35.91C6.39 34.47 6.12 33.64 6.09 33.4C6.04 33.04 5.66 32.33 6.09 31.9C6.51 31.46 6.5 30.85 6.09 30.54C5.81 30.33 5.1 30.03 3.97 29.63L4.59 28.51C4.63 28.51 4.63 28.19 4.59 27.57C4.55 26.94 4.11 26.18 3.28 25.28L2.31 24.54Z");
+    left: 0.5rem;
+    top: 0.2rem;
+    transform: rotate(-3deg);
+    z-index: -1;
+  }
+`,C=i.default.p`
+  line-height: 2.2rem;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4rem;
+  }
+`,u=Object(i.default)(o.c)`
+    font-weight: normal;
+`;function f({intInfoPreneur:e,intInfoMandat:L}){return r.a.createElement(i.ThemeProvider,{theme:a.c},r.a.createElement(m,null,r.a.createElement(u,{label:d.a.freeServices,tabIndex:0}),r.a.createElement(c,null,d.a.ourServices,r.a.createElement(s,null,d.a.customServices)),r.a.createElement(C,null,d.a.slogan),r.a.createElement(l.a,{intInfoPreneur:e,intInfoMandat:L})))}}}]);
+//# sourceMappingURL=serviciels.d174b05bfc7c0d582408.bundle.js.map
